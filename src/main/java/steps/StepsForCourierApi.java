@@ -21,7 +21,7 @@ public class StepsForCourierApi {
                     .build();
 
     @Step("Создание нового курьера")
-    public static Response createCourier(CourierCreate body){
+    public static Response createCourier(CourierCreate body) {
         return given()
                 .spec(REQUEST_SPECIFICATION)
                 .body(body)
@@ -30,7 +30,7 @@ public class StepsForCourierApi {
     }
 
     @Step("Авторизация курьера")
-    public static Response loginCourier(CourierLogin body){
+    public static Response loginCourier(CourierLogin body) {
         return given()
                 .spec(REQUEST_SPECIFICATION)
                 .body(body)

@@ -22,7 +22,7 @@ public class CreateOrderTest {
     private final List<String> orderColors;
     private final int expectedStatus;
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {Цвет самоката} {Статус код ответа при создание заказа}")
     public static Object[][] getTextData() {
         return new Object[][]{
                 {Arrays.asList("GREY", "BLACK"), 201},
